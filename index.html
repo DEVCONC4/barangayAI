@@ -924,14 +924,6 @@ git push</code></div></div>
           <a href="https://github.com/devcon-ph" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;background:var(--dc-blue-light);border:1px solid var(--border);border-radius:20px;padding:4px 11px;font-size:11.5px;color:var(--text-primary);font-weight:600;text-decoration:none">github.com/devcon-ph</a>
           <a href="https://github.com/Spod101/barangayAI/fork" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;background:var(--dc-blue-light);border:1px solid var(--border);border-radius:20px;padding:4px 11px;font-size:11.5px;color:var(--text-primary);font-weight:600;text-decoration:none">Fork this project</a>
         </div>
-        <!-- Lives on its own domain. /showcase on this app's domain redirects there (vercel.json) for anything printed on a slide, but the app also runs from file:// and localhost at camp, where a root-relative path is a 404 — so this names the real address. -->
-        <a href="https://barangay-ai-showcase.vercel.app" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:space-between;background:var(--bg-secondary);border:1px solid var(--border);border-radius:10px;padding:11px 14px;text-decoration:none;margin-bottom:10px">
-          <div>
-            <div style="font-size:12.5px;font-weight:700;color:var(--text-primary);margin-bottom:2px">10 AIs built at past camps</div>
-            <div style="font-size:11.5px;color:var(--text-secondary);line-height:1.5">Live demos, source, and the prompt behind each one.</div>
-          </div>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-left:12px;color:var(--text-muted)"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        </a>
         <a href="https://devcon.ph/codecamps" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:space-between;background:var(--bg-secondary);border:1px solid var(--border);border-radius:10px;padding:10px 14px;text-decoration:none">
           <span style="font-size:12px;font-weight:600;color:var(--text-primary)">19,000+ geeks · 300 student-built projects deployed to production every year</span>
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-left:10px;color:var(--text-muted)"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -1107,9 +1099,16 @@ git push</code></div></div>
 
     <div style="position:sticky;bottom:0;background:var(--bg-panel);padding:14px 22px 20px;border-top:1px solid var(--border-light);display:flex;gap:10px;align-items:center">
       <!-- Step 1 footer -->
-      <div id="onboard-footer-1" style="display:flex;gap:10px;align-items:center;width:100%">
-        <button onclick="closeModal()" style="flex-shrink:0;background:none;border:1px solid var(--border);border-radius:10px;padding:11px 18px;color:var(--text-secondary);font-family:var(--font-main);font-size:13px;font-weight:700;cursor:pointer">Skip</button>
-        <button class="modal-footer-btn" style="margin-top:0;flex:1" onclick="onboardNext()">Let's get started →</button>
+      <div id="onboard-footer-1" style="display:flex;flex-direction:column;gap:10px;width:100%">
+        <div style="display:flex;gap:10px;align-items:center;width:100%">
+          <button onclick="closeModal()" style="flex-shrink:0;background:none;border:1px solid var(--border);border-radius:10px;padding:11px 18px;color:var(--text-secondary);font-family:var(--font-main);font-size:13px;font-weight:700;cursor:pointer">Skip</button>
+          <button class="modal-footer-btn" style="margin-top:0;flex:1" onclick="onboardNext()">Let's get started →</button>
+        </div>
+        <!-- Lives on its own domain. /showcase on this app's domain redirects there (vercel.json) for anything printed on a slide, but the app also runs from file:// and localhost at camp, where a root-relative path is a 404 — so this names the real address. -->
+        <a href="https://barangay-ai-showcase.vercel.app" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:7px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:10px;padding:11px 18px;color:var(--text-secondary);font-family:var(--font-main);font-size:13px;font-weight:700;text-decoration:none">
+            Check the Code Camp Folios
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;color:var(--text-muted)"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
       </div>
       <!-- Step 2 footer -->
       <div id="onboard-footer-2" style="display:none;gap:10px;align-items:center;width:100%">
